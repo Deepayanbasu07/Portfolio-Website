@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepayan Basu - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4a90e2;
+        }
+
+        /* Main Sections */
+        section {
+            padding: 50px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        /* Flexbox Layouts */
+        .experience,
+        .projects,
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .job,
+        .project,
+        .skill {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .job:hover,
+        .project:hover,
+        .skill:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        #contact p {
+            font-size: 1.2rem;
+        }
+
+        #contact a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .experience,
+            .projects,
+            .skills {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 20px 10px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+
+            .job,
+            .project,
+            .skill {
+                padding: 15px;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Deepayan Basu - Aspiring Data Scientist</h1>
+    </header>
+
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Deepayan Basu, an aspiring data scientist currently pursuing a B.Tech in Materials Science at IIT
+            Jodhpur. I have a passion for data analysis, machine learning, and predictive modeling, with hands-on
+            experience in various projects and internships.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="job">
+                <h3>Research Intern - DRDO, Ministry of Defence</h3>
+                <p>Developed a deep learning model for SAR Target Classification with 94% accuracy, streamlining data
+                    analysis processes.</p>
+            </div>
+            <div class="job">
+                <h3>ML/Data Analyst Intern - Y-Hills Edtech</h3>
+                <p>Built predictive models for concrete strength and loan default detection, enhancing decision-making
+                    capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Machine Learning for Band Gap Prediction</h3>
+                <p>Developed a machine learning model for band gap prediction with an MAE of 0.007091 and R² of
+                    0.999808.</p>
+                <a href="https://github.com/Deepayanbasu07" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Zomato Exploratory Data Analysis</h3>
+                <p>Conducted an in-depth analysis of the Zomato dataset, uncovering trends and insights for strategic
+                    decisions.</p>
+                <a href="https://github.com/Deepayanbasu07" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>Python, C/C++, SQL</p>
+            </div>
+            <div class="skill">
+                <h3>Tools & Libraries</h3>
+                <p>Pandas, NumPy, Scikit-Learn, TensorFlow, Git</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: deepayanbasu5@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/deepayan-basu-06a5b123b"
+                target="_blank">linkedin.com/in/deepayan-basu-06a5b123b</a></p>
+        <p>GitHub: <a href="https://github.com/Deepayanbasu07" target="_blank">github.com/Deepayanbasu07</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Deepayan Basu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for responsive navigation
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.style.backgroundColor = '#4a90e2';
+            } else {
+                navbar.style.backgroundColor = '#333';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
